@@ -1,0 +1,88 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Manager</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav>
+        <h2>Student<span>Manager</span></h2>
+        <p>Dashboard</p>
+    </nav>
+
+    <main class="container">
+
+        <h1>Student Dashboard</h1>
+        <p class="subtitle">Manage your students easily.</p>
+
+        <div class="stats">
+            <div class="card">
+                <h2 id="totalStudents">0</h2>
+                <p>Total Students</p>
+            </div>
+
+            <div class="card">
+                <h2>Active</h2>
+                <p>Student Records</p>
+            </div>
+        </div>
+
+        <section class="form-section">
+            <h2>Add New Student</h2>
+
+            <form id="studentForm">
+
+                <input
+                    type="text"
+                    id="name"
+                    placeholder="Student Name"
+                    required
+                >
+
+                <input
+                    type="email"
+                    id="email"
+                    placeholder="Email Address"
+                    required
+                >
+
+                <input
+                    type="text"
+                    id="course"
+                    placeholder="Course Name"
+                    required
+                >
+
+                <button type="submit">Add Student</button>
+
+            </form>
+        </section>
+
+        <section class="table-section">
+            <h2>Student List</h2>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Course</th>
+                    </tr>
+                </thead>
+
+                <tbody id="studentList">
+                </tbody>
+            </table>
+        </section>
+
+    </main>
+
+    <script type="module" src="script.js"></script>
+
+</body>
+</html>
